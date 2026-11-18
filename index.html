@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Freelance Manager</h2>
+
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#earnings">Earnings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Dashboard -->
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <p>Welcome to your freelance workspace.</p>
+
+            <div class="stats">
+                <div class="card">
+                    <h3>Total Projects</h3>
+                    <p id="total-projects">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Active Projects</h3>
+                    <p id="active-projects">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Earnings</h3>
+                    <p id="total-earnings">₹0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <form id="project-form">
+                <input
+                    type="text"
+                    id="project-name"
+                    placeholder="Project name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="project-budget"
+                    placeholder="Project budget"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <button type="submit">Add Project</button>
+            </form>
+
+            <div id="project-list"></div>
+        </section>
+
+        <!-- Earnings -->
+        <section id="earnings">
+            <h2>Earnings</h2>
+
+            <div class="card">
+                <h3>Total Earnings</h3>
+                <p id="earnings-display">₹0</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
